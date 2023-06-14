@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SellerService } from '../services/seller.service';
 
 @Component({
   selector: 'app-seller-authentication',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SellerAuthenticationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private seller: SellerService) { }
 
   ngOnInit(): void {
+  }
+
+  signUp(data: object): void
+  {
+    console.log(data);
+    this.seller.userSignUp();
   }
 
 }

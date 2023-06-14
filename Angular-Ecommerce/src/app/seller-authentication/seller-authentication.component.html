@@ -1,1 +1,11 @@
-<h1>seller-authentication works!</h1>
+<div class="seller-auth">
+    <div class="signup">
+        <h1>Seller Sign-Up</h1>
+        <form #sellerSignUpForm="ngForm" (ngSubmit)="signUp(sellerSignUpForm.value)" class="common-form">
+            <input type="text" class="form-input" name="name" placeholder="Enter firstname" ngModel>
+            <input type="text" class="form-input"name="email" placeholder="Enter email" ngModel>
+            <input type="text" class="form-input"name="password" placeholder="Enter password" ngModel>
+            <button class="form-button">Sign-Up</button>
+        </form>
+    </div>
+</div>
