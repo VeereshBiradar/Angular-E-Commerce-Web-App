@@ -11,6 +11,12 @@
       "email": "patilpurvi1999@gmail.com",
       "password": "patil1999@purvi",
       "id": 2
+    },
+    {
+      "name": "Anjali",
+      "email": "anjali1999@gmail.com",
+      "password": "Anjali@1999",
+      "id": 3
     }
   ]
 }
