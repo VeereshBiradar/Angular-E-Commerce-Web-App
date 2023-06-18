@@ -17,6 +17,41 @@
       "email": "anjali1999@gmail.com",
       "password": "Anjali@1999",
       "id": 3
+    },
+    {
+      "name": "Krithika ",
+      "email": "krithika.b.2000@outlook.com",
+      "password": "krithi@2000",
+      "id": 4
+    },
+    {
+      "name": "Aishwarya ",
+      "email": "aishu.agarwal1999@gmail.com",
+      "password": "Aishu@1999",
+      "id": 5
+    },
+    {
+      "name": "Shraddha",
+      "email": "shraddha.sharma@gmail.com",
+      "password": "sharddha@2000",
+      "id": 6
+    },
+    {
+      "name": "Aisha",
+      "email": "aisha.2000@gmail.com",
+      "password": "aisha#200",
+      "id": 7
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": 8
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 9
     }
   ]
 }
