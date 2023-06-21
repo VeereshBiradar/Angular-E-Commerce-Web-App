@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  menuType : string = ' ';
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.router.events.subscribe((res:any)=>
+    {
+       if(res.url)
+       {
+        if(localStorage.getItem('seller') && res.url.includes('seller'))
+        {
+          this.menuType = 'seller';
+        }else{
+          this.menuType = 'default'
+        }
+       }
+    })
   }
 
 }
