@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   menuType : string = ' ';
+  sellerName: string = '';
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -19,11 +20,29 @@ export class HeaderComponent implements OnInit {
         if(localStorage.getItem('seller') && res.url.includes('seller'))
         {
           this.menuType = 'seller';
+          this.getSellerName();
         }else{
           this.menuType = 'default'
         }
        }
     })
+  }
+
+  public logout()
+  {
+    localStorage.removeItem('seller');
+    this.router.navigate(['/']);
+  }
+
+  public getSellerName()
+  {
+    let value = localStorage.getItem('seller');
+    if(value)
+    {
+        let sellerData = value && JSON.parse(value)[0];
+        console.log(sellerData)
+        this.sellerName = sellerData.name;
+    }
   }
 
 }
