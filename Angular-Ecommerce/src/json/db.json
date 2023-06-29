@@ -43,27 +43,16 @@
       "id": 7
     },
     {
-      "email": "",
-      "password": "",
-      "id": 8
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 9
-    },
-    {
       "name": "Anjali Agarwal",
       "email": "anjali.agarwal@gmail.com",
       "password": "Anjali@2000",
-      "id": 10
-    },
+      "id": 8
+    }
+  ],
+
+  "products": [
     {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 11
+      
     }
   ]
 }
